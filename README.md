@@ -1,4 +1,4 @@
-📊 Student Habits & Academic Performance Analysis
+# 📊 Student Habits & Academic Performance Analysis
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" />
@@ -55,19 +55,11 @@ All findings are validated with proper statistical tests (p-values, effect sizes
 
 ```
 student-habits-academic-performance-analysis/
-├── data/
-│   └── student_habits_performance.csv       # Raw dataset (1,000 x 16)
-├── notebooks/
-│   └── EDA_Student_Habits_Performance.ipynb  # Full EDA + statistical tests + modeling
-├── dashboard/
-│   ├── Student_Performance_Dashboard.pbix    # Power BI interactive dashboard
-│  
-├── assets/
-│   └── dashboard_preview.png                 # Dashboard screenshot
-├── requirements.txt                          # Python dependencies
-├── README.md                                 # This file
-├── LICENSE
-└── .gitignore
+├── EDA_Student_Habits_Performance.ipynb    # Full EDA + statistical tests + modeling
+├── Student_Performance_Dashboard.pbix      # Power BI interactive dashboard
+├── dashboard_preview.png                   # Dashboard screenshot
+├── student_habits_performance.csv          # Raw dataset (1,000 x 16)
+└── README.md                               # This file
 ```
 
 ---
@@ -199,7 +191,7 @@ Despite common assumptions, the following factors showed **no statistically sign
 
 ## 📊 Dashboard Preview
 
-![Dashboard Preview](assets/dashboard_preview.png)
+![Dashboard Preview](dashboard_preview.png)
 
 The Power BI dashboard translates the EDA findings into an interactive stakeholder-facing tool:
 
@@ -237,7 +229,7 @@ The Power BI dashboard translates the EDA findings into an interactive stakehold
 
 ---
 
-## 🚀 Future Work
+## 🔮 Future Work
 
 - Train **Random Forest / XGBoost** models and compare feature importance with Linear Regression coefficients
 - Engineer **interaction features** (e.g., `study_hours × mental_health_rating`) to capture compounding effects
@@ -257,36 +249,21 @@ python >= 3.9
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/student-habits-academic-performance-analysis.git
+git clone https://github.com/senaerdemm2/student-habits-academic-performance-analysis.git
 cd student-habits-academic-performance-analysis
 
 # Install dependencies
-pip install -r requirements.txt
+pip install pandas numpy matplotlib seaborn scikit-learn scipy jupyter
 ```
 
 ### Run the EDA Notebook
 ```bash
-jupyter notebook notebooks/EDA_Student_Habits_Performance.ipynb
+jupyter notebook EDA_Student_Habits_Performance.ipynb
 ```
 
 ### Open the Dashboard
-1. Download `dashboard/Student_Performance_Dashboard.pbix`
+1. Download `Student_Performance_Dashboard.pbix`
 2. Open with [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/)
-
-
----
-
-## 📋 Requirements
-
-```
-pandas>=2.0
-numpy>=1.24
-matplotlib>=3.7
-seaborn>=0.12
-scipy>=1.10
-scikit-learn>=1.2
-jupyter>=1.0
-```
 
 ---
 
